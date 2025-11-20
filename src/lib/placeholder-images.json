@@ -1,0 +1,70 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "Happy kids playing with educational toys in a sunlit room",
+      "imageUrl": "https://images.unsplash.com/photo-1613794713137-a78aba4be84a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxraWRzJTIwcGxheWluZ3xlbnwwfHx8fDE3NjM1MDc5Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kids playing"
+    },
+    {
+      "id": "games-collage",
+      "description": "A collage showcasing the various printable bible games included in the kit.",
+      "imageUrl": "https://i.ibb.co/h1F5KgGm/1763598991023.png",
+      "imageHint": "printable games"
+    },
+    {
+      "id": "games-grid-main",
+      "description": "Visual representation of the printable bible games",
+      "imageUrl": "https://i.ibb.co/y1RrkNX/1000335362-removebg-preview.png",
+      "imageHint": "printable games"
+    },
+    {
+      "id": "games-grid-2",
+      "description": "Another example of a bible-themed printable game",
+      "imageUrl": "https://images.unsplash.com/photo-1674953418931-6f07344b5c52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiaWJsZSUyMHdvcmtzaGVldHxlbnwwfHx8fDE3NjM1OTIxNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bible worksheet"
+    },
+    {
+      "id": "games-grid-3",
+      "description": "Close-up of a colorful printable game for kids",
+      "imageUrl": "https://images.unsplash.com/photo-1763194994497-0b904eb0640d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGlsZHJlbnMlMjBhY3Rpdml0eXxlbnwwfHx8fDE3NjM1OTIxNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "childrens activity"
+    },
+    {
+      "id": "coloring-bonus",
+      "description": "A child coloring a biblical themed drawing",
+      "imageUrl": "https://images.unsplash.com/photo-1453749024858-4bca89bd9edc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMGNvbG9yaW5nfGVufDB8fHx8MTc2MzU5MjE2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "child coloring"
+    },
+    {
+      "id": "family-playing",
+      "description": "A family laughing and playing a board game together at home",
+      "imageUrl": "https://images.unsplash.com/photo-1762714768963-8fc0d1a22fd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYW1pbHklMjBnYW1lfGVufDB8fHx8MTc2MzU5MjE2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family game"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Depoimento de Juliana M.",
+      "imageUrl": "https://i.postimg.cc/LX1p2vLF/Captura-de-tela-2025-10-01-201033.png",
+      "imageHint": "depoimento cliente"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Depoimento de Carlos S.",
+      "imageUrl": "https://i.postimg.cc/d1yYwnrV/Captura-de-tela-2025-11-20-152142.png",
+      "imageHint": "depoimento cliente"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Depoimento de Rafael S.",
+      "imageUrl": "https://i.postimg.cc/sXhrsK7X/Captura-de-tela-2025-11-20-152258.png",
+      "imageHint": "depoimento cliente"
+    },
+    {
+      "id": "guarantee-seal",
+      "description": "Selo de Garantia de 7 Dias",
+      "imageUrl": "https://i.postimg.cc/0y03GFd2/Selo-de-Garantia-de-7-Dias-PNG-Transparente-Sem-Fundo.png",
+      "imageHint": "guarantee seal"
+    }
+  ]
+}
