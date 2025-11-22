@@ -1,6 +1,8 @@
+
 'use client'
 
 import { Check } from 'lucide-react';
+import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -20,13 +22,14 @@ import {
 interface PricingCardProps {
   planName: string;
   price: number;
+  originalPrice?: number;
   description: string;
   features: string[];
   buttonText: string;
   isPopular: boolean;
 }
 
-export function PricingCard({ planName, price, description, features, buttonText, isPopular }: PricingCardProps) {
+export function PricingCard({ planName, price, originalPrice, description, features, buttonText, isPopular }: PricingCardProps) {
   
   const formatPrice = (value: number) => {
     return value.toLocaleString('pt-BR', {
@@ -54,14 +57,19 @@ export function PricingCard({ planName, price, description, features, buttonText
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter className="flex-col-reverse gap-2 sm:flex-row sm:gap-0">
-          <AlertDialogCancel>Não, obrigado. Quero o plano Essencial.</AlertDialogCancel>
-          <AlertDialogAction>Sim! Eu quero o Plano Completo por R$ 14,90!</AlertDialogAction>
+          <AlertDialogCancel asChild>
+            <Link href="https://checkout.biblicoplay.online/VCCL1O8SCIPS">Não, obrigado. Quero o plano Essencial.</Link>
+          </AlertDialogCancel>
+          <Link href="https://checkout.biblicoplay.online/VCCL1O8SCIPU">
+            <AlertDialogAction>Sim! Eu quero o Plano Completo por R$ 14,90!</AlertDialogAction>
+          </Link>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
   )
   
   const RegularButton = () => (
+    <Link href="https://checkout.biblicoplay.online/VCCL1O8SCIPU" className="w-full">
      <Button 
         className={cn("w-full font-bold", isPopular && "animate-zoom-in-out")}
         size="lg" 
@@ -69,6 +77,7 @@ export function PricingCard({ planName, price, description, features, buttonText
       >
         {buttonText}
       </Button>
+    </Link>
   )
 
 
@@ -79,10 +88,15 @@ export function PricingCard({ planName, price, description, features, buttonText
       )}
       <CardHeader className="text-center pt-8">
         <CardTitle className="font-headline text-2xl font-bold">{planName}</CardTitle>
-        <div className="flex items-baseline justify-center gap-1 py-4">
-          <span className="text-5xl font-black tracking-tighter">
-            {formatPrice(price)}
-          </span>
+        <div className="py-4">
+          {originalPrice && (
+             <p className="text-lg line-through text-muted-foreground">De {formatPrice(originalPrice)}</p>
+          )}
+          <div className="flex items-baseline justify-center gap-1">
+            <span className="text-5xl font-black tracking-tighter">
+              {formatPrice(price)}
+            </span>
+          </div>
         </div>
         <CardDescription className={cn(isPopular ? "text-primary-foreground/80" : "text-muted-foreground")}>{description}</CardDescription>
       </CardHeader>
