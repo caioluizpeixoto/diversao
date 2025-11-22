@@ -34,9 +34,9 @@ export function HeroSection() {
           </div>
           <div className="flex justify-center lg:justify-start w-full">
             <Link href="#pricing" className="w-full max-w-md">
-                <Button size="lg" className="mt-8 text-xl font-bold w-full animate-zoom-in-out">
-                    Tenha Acesso Agora
-                </Button>
+              <Button size="lg" className="mt-8 text-xl font-bold w-full">
+                  Tenha Acesso Agora
+              </Button>
             </Link>
           </div>
         </div>
