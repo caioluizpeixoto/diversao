@@ -3,6 +3,7 @@
 
 import { Check } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -30,7 +31,8 @@ interface PricingCardProps {
 }
 
 export function PricingCard({ planName, price, originalPrice, description, features, buttonText, isPopular }: PricingCardProps) {
-  
+  const router = useRouter();
+
   const formatPrice = (value: number) => {
     return value.toLocaleString('pt-BR', {
       style: 'currency',
@@ -57,12 +59,8 @@ export function PricingCard({ planName, price, originalPrice, description, featu
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter className="flex-col-reverse gap-2 sm:flex-row sm:gap-0">
-          <AlertDialogCancel asChild>
-            <Link href="https://checkout.biblicoplay.online/VCCL1O8SCIPS">Não, obrigado. Quero o plano Essencial.</Link>
-          </AlertDialogCancel>
-          <Link href="https://checkout.biblicoplay.online/VCCL1O8SCIPU">
-            <AlertDialogAction>Sim! Eu quero o Plano Completo por R$ 14,90!</AlertDialogAction>
-          </Link>
+          <AlertDialogCancel onClick={() => router.push('https://checkout.biblicoplay.online/VCCL1O8SCIPS')}>Não, obrigado. Quero o plano Essencial.</AlertDialogCancel>
+          <AlertDialogAction onClick={() => router.push('https://checkout.biblicoplay.online/VCCL1O8SCIPT')}>Sim! Eu quero o Plano Completo por R$ 14,90!</AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
